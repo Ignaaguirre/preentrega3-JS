@@ -1,0 +1,43 @@
+.cuerpo-contacto{
+    max-width: 1200px;
+    margin: 0 auto ;
+    margin-top: $spacing-small;
+    margin-left: $spacing-medium;
+    padding-bottom: $spacing-large;
+    &__titulo{
+        color:$primary;
+        text-align: center;
+        font-family: $font-title;
+        font-size: $text-large;
+      }
+      &__formulario
+      {
+        background-color: $secondary;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding-bottom: $spacing-medium;
+      }
+
+}
+.redes
+{
+&__titulo{
+color:$primary;
+text-align: center;
+font-family: $font-title;
+font-size: $text-large;
+}
+&__links{
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  padding: $spacing-large;
+  &-text{
+    font-size: $spacing-medium;
+    font-weight: 300;
+    color:$text-color;
+    text-align: center;
+  }
+}
+}
