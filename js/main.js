@@ -1,4 +1,4 @@
-let email = document.getElementById("inputEmail4");
+let email = document.getElementById("inputEmail4");// no lee input 
 let emailError = document.getElementById("emailError");
 if (email.value == "") {
     emailError.className = "text-light bg-danger p-1";
