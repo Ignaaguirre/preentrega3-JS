@@ -38,8 +38,9 @@ for (const producto of productos) {
   div.className = "col-md-4 text-center";
   div.innerHTML = `<img src=${producto.imagen} class="img-fluid">
   <h3>${producto.nombre}</h3>
-  <p>$${producto.precio}</p>`;
+  <p>$${producto.precio}</p>
+  <button type="submit" class="btn btn-secondary">Agregar al carrito</button>`
+  ;
   document.getElementById("productos").appendChild(div);
 }
-
 
