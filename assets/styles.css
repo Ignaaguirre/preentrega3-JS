@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Roboto+Slab:wght@300;500&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+body {
+        font-family: "Barlow", sans-serif;
+    background-color: black;
+}
+.contenedor-login{ 
+
+    width: 320px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+
+
+    }
+.cuerpo-login {
+    background-color: grey;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);    
+    padding: 20px 30px;
+    }
+.cuerpo-login button{
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: red;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+.login-popup{
+position: absolute;
+top: -150%;
+left: 50%;
+opacity: 0;
+transform: translate(-50%,-50%) scale(1.25);  
+width: 300px;
+padding: 20px 30px;
+background-color: white;
+border-radius: 10px;
+
+
+ 
+
+}
+.login-popup.active{
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+
+
+}
+
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: red;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.login-popup .form-1 h2{
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 23px;
+}
+.login-popup .form-1 .form-element{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px;
+}
+.login-popup .form-1 .form-element label{
+font-size: 14px;
+color: #222;
+}
+
+.login-popup .form-1 .form-element input[type="text"], .login-popup .form-1 .form-element input[type="password"]{
+margin-top: 5px;
+display: block;
+width: 100%;
+padding: 10px;
+outline: none;
+border: 1px solid #aaa;
+border-radius: 5px;
+    }
+    .login-popup .form-1 .form-element input[type="checbox"]{
+        margin-right: 5px;
+    }
+    .login-popup .form-1 .form-element button{
+        width: 100%;
+        height: 40px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        background-color: red;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+
+.registrarse-popup{
+position: absolute;
+top: 50%;
+left: -150%;
+opacity: 0;
+transform: translate(-50%,-50%) scale(1.25);  
+width: 300px;
+padding: 20px 30px;
+background-color: white;
+border-radius: 10px;
+
+
+ 
+}
+.registrarse-popup.active{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+
+}
+.registrarse-popup .form h2{
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 23px;
+}
+.registrarse-popup .form .form-element{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px;
+}
+.registrarse-popup .form .form-element label{
+font-size: 14px;
+color: #222;
+}
+
+.registrarse-popup .form .form-element input[type="text"], .registrarse-popup .form .form-element input[type="password"],.registrarse-popup .form .form-element input[type="number"]{
+margin-top: 5px;
+display: block;
+width: 100%;
+padding: 10px;
+outline: none;
+border: 1px solid #aaa;
+border-radius: 5px;
+    }
+
+    .registrarse-popup .form .form-element button{
+        width: 100%;
+        height: 40px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        background-color: red;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+    }
