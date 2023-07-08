@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="cuerpo-login">
+        <main class="contenedor-login">
+            <button id="mostrar-login">Iniciar sesion</button>
+            <button id="mostrar-registrarse">Registrarse</button>
+            <a href="../index.html">Continuar sin iniciar sesion</a>
+        </main>
+        <div class="login-popup">
+            <div class="close-btn">&times;</div>
+            <div class="form-1">
+                <h2>Inicia Sesión</h2>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" id="inputEmail-1" placeholder="ejemplo@email.com">
+                </div>
+                <div class="form-element">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="inputContraseña-1" placeholder="Ingrese su contraseña">
+                </div>
+                <div class="form-elemento">
+                    <input type="checkbox" id="recordarme-cb"> 
+                    <label for="recordarme-cb">Recordarme</label>    <!-- para estetica nomas -->
+                </div>
+                <div class="form-element">
+                    <button id="iniciar-sesion">Iniciar sesion</button>
+                </div>
+            </div>
+        </div>
+        <div class="registrarse-popup">
+            <div class="close-btn">&times;</div>    
+            <div class="form">
+                <h2>Registrate</h2>
+                <div class="form-element">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="inputNombre" placeholder="Ingrese su nombre completo">
+                </div>
+                <div class="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" id="inputEmail" placeholder="ejemplo@email.com">
+                </div>
+                <div class="form-element">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="inputContraseña" placeholder="Crea una contraseña">
+                </div>
+                <div class="form-element">
+                    <label for="edad">Edad</label>
+                    <input type="number" id="inputEdad" placeholder="Ingrese su edad">
+                </div>
+                <div class="form-elemento">
+                    <h3>Ingrese plan deseado</h3>
+                    <input type="radio" id="rookie" name="fav_language" value="rookie">
+                    <label for="rookie">ROOKIE</label><br>
+                    <input type="radio" id="intermedio" name="fav_language" value="intermedio">
+                    <label for="intermedio">INTERMEDIO</label><br>
+                    <input type="radio" id="avanzado" name="fav_language" value="avanzado">
+                    <label for="avanzado">AVANZADO</label>
+
+                </div>
+                <div class="form-element">
+                <button id="registrarse-btn">Registrarse</button>
+            </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>
